@@ -7,8 +7,8 @@ letra = str(input('Digite qual letra da frase queira os dados especificados: '))
 
 quantasletras = frase.count(letra)
 
-primeira_pos = frase.find(letra)
-segunda_pos = frase.rfind(letra)
+primeira_pos = frase.find(letra) + 1
+segunda_pos = frase.rfind(letra) + 1
 
 print(f'Você digitou a frase: "{frase}". Escolheu a letra "{letra}". A primeira vez que a letra "{letra}" foi na posição {primeira_pos}, e a última vez foi na posição {segunda_pos}')
 
